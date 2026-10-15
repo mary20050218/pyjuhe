@@ -1,0 +1,155 @@
+{
+  "sites": [
+    {
+      "key": "py_4kmp",
+      "name": "🎬影视｜4KMP影视",
+      "type": 3,
+      "api": "https://cdn.jsdelivr.net/gh/zxsla/pyjuhe@main/py_4kmp.py"
+    },
+    {
+      "key": "py_yongle",
+      "name": "🎬影视｜永乐视频",
+      "type": 3,
+      "api": "https://cdn.jsdelivr.net/gh/zxsla/pyjuhe@main/py_yongle.py"
+    },
+    {
+      "key": "py_uvod",
+      "name": "🎬影视｜UVOD影视",
+      "type": 3,
+      "api": "https://cdn.jsdelivr.net/gh/zxsla/pyjuhe@main/py_uvod.py"
+    },
+    {
+      "key": "py_youku",
+      "name": "🎬影视｜优酷影视",
+      "type": 3,
+      "api": "https://cdn.jsdelivr.net/gh/zxsla/pyjuhe@main/py_youku.py"
+    },
+    {
+      "key": "py_freeok",
+      "name": "🎬影视｜FreeOK影视",
+      "type": 3,
+      "api": "https://cdn.jsdelivr.net/gh/zxsla/pyjuhe@main/py_freeok.py"
+    },
+    {
+      "key": "py_yunduo",
+      "name": "🎬影视｜云朵影视",
+      "type": 3,
+      "api": "https://cdn.jsdelivr.net/gh/zxsla/pyjuhe@main/py_yunduo.py"
+    },
+    {
+      "key": "py_chujian",
+      "name": "🎬影视｜初见影视",
+      "type": 3,
+      "api": "https://cdn.jsdelivr.net/gh/zxsla/pyjuhe@main/py_chujian.py"
+    },
+    {
+      "key": "py_haoju",
+      "name": "🎬影视｜好剧影视",
+      "type": 3,
+      "api": "https://cdn.jsdelivr.net/gh/zxsla/pyjuhe@main/py_haoju.py"
+    },
+    {
+      "key": "py_nongmin",
+      "name": "🎬影视｜农民影视",
+      "type": 3,
+      "api": "https://cdn.jsdelivr.net/gh/zxsla/pyjuhe@main/py_nongmin.py"
+    },
+    {
+      "key": "py_iqiyi",
+      "name": "🎬影视｜爱奇艺影视",
+      "type": 3,
+      "api": "https://cdn.jsdelivr.net/gh/zxsla/pyjuhe@main/py_iqiyi.py"
+    },
+    {
+      "key": "py_tencent",
+      "name": "🎬影视｜腾讯视频",
+      "type": 3,
+      "api": "https://cdn.jsdelivr.net/gh/zxsla/pyjuhe@main/py_tencent.py"
+    },
+    {
+      "key": "py_6v",
+      "name": "🎬影视｜6V电影",
+      "type": 3,
+      "api": "https://cdn.jsdelivr.net/gh/zxsla/pyjuhe@main/py_6v.py"
+    },
+    {
+      "key": "py_hongguo",
+      "name": "📱短剧｜红果短剧",
+      "type": 3,
+      "api": "https://cdn.jsdelivr.net/gh/zxsla/pyjuhe@main/py_hongguo.py"
+    },
+    {
+      "key": "py_hema",
+      "name": "📱短剧｜河马短剧",
+      "type": 3,
+      "api": "https://cdn.jsdelivr.net/gh/zxsla/pyjuhe@main/py_hema.py"
+    },
+    {
+      "key": "py_55duanju",
+      "name": "📱短剧｜五五短剧",
+      "type": 3,
+      "api": "https://cdn.jsdelivr.net/gh/zxsla/pyjuhe@main/py_55duanju.py"
+    },
+    {
+      "key": "py_niuniu",
+      "name": "📱短剧｜牛牛短剧",
+      "type": 3,
+      "api": "https://cdn.jsdelivr.net/gh/zxsla/pyjuhe@main/py_niuniu.py"
+    },
+    {
+      "key": "py_duanjubus",
+      "name": "📱短剧｜短剧巴士",
+      "type": 3,
+      "api": "https://cdn.jsdelivr.net/gh/zxsla/pyjuhe@main/py_duanjubus.py"
+    },
+    {
+      "key": "py_55dj2",
+      "name": "📱短剧｜五五短剧2",
+      "type": 3,
+      "api": "https://cdn.jsdelivr.net/gh/zxsla/pyjuhe@main/py_55dj2.py"
+    },
+    {
+      "key": "py_hamigua",
+      "name": "🎌动漫｜哈密瓜动漫",
+      "type": 3,
+      "api": "https://cdn.jsdelivr.net/gh/zxsla/pyjuhe@main/py_hamigua.py"
+    },
+    {
+      "key": "py_djuu",
+      "name": "🎵音乐｜DJ呦呦音乐",
+      "type": 3,
+      "api": "https://cdn.jsdelivr.net/gh/zxsla/pyjuhe@main/py_djuu.py"
+    },
+    {
+      "key": "py_djuu2",
+      "name": "🎵音乐｜DJ呦呦2",
+      "type": 3,
+      "api": "https://cdn.jsdelivr.net/gh/zxsla/pyjuhe@main/py_djuu2.py"
+    },
+    {
+      "key": "py_music",
+      "name": "🎵音乐｜爱听音乐",
+      "type": 3,
+      "api": "https://cdn.jsdelivr.net/gh/zxsla/pyjuhe@main/py_music.py"
+    },
+    {
+      "key": "py_kuwo",
+      "name": "🎵音乐｜酷我音乐",
+      "type": 3,
+      "api": "https://cdn.jsdelivr.net/gh/zxsla/pyjuhe@main/py_kuwo.py"
+    },
+    {
+      "key": "py_tingyou",
+      "name": "🎵音乐｜听友FM",
+      "type": 3,
+      "api": "https://cdn.jsdelivr.net/gh/zxsla/pyjuhe@main/py_tingyou.py"
+    }
+  ],
+  "parses": [
+    {
+      "name": "M3U8解析",
+      "type": 1,
+      "url": "https://jx.m3u8.tv/jiexi/?url="
+    }
+  ]
+}
