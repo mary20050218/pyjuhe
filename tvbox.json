@@ -25,6 +25,14 @@
       "api": "https://cdn.jsdelivr.net/gh/zxsla/pyjuhe@main/py_senlinyingshi.py"
     },
     {
+      "key": "py_lianggebtyingshi",
+      "name": "🎬影视｜两个BT影视",
+      "type": 3,
+      "api": "https://cdn.jsdelivr.net/gh/zxsla/pyjuhe@main/py_lianggebtyingshi.py",
+      "searchable": 1,
+      "changeable": 1
+    },
+    {
       "key": "py_4kmpyingshi",
       "name": "🎬影视｜4KMP影视",
       "type": 3,
