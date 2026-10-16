@@ -1,1 +1,412 @@
-IyAtKi0gY29kaW5nOiB1dGYtOCAtKi0KaW1wb3J0IHN5cywgcmUsIGpzb24sIGJhc2U2NCwgdGltZSwgdGhyZWFkaW5nCmZyb20gdXJsbGliLnBhcnNlIGltcG9ydCBxdW90ZQpmcm9tIGNvbmN1cnJlbnQuZnV0dXJlcyBpbXBvcnQgVGhyZWFkUG9vbEV4ZWN1dG9yCmltcG9ydCByZXF1ZXN0cwoKc3lzLnBhdGguYXBwZW5kKCcuLicpCnRyeToKICAgIGZyb20gYmFzZS5zcGlkZXIgaW1wb3J0IFNwaWRlcgpleGNlcHQgSW1wb3J0RXJyb3I6CiAgICBjbGFzcyBTcGlkZXI6CiAgICAgICAgZGVmIGZldGNoKHNlbGYsIHVybCwgaGVhZGVycz1Ob25lLCAqKmt3KToKICAgICAgICAgICAga3cucG9wKCd0aW1lb3V0JywgTm9uZSkKICAgICAgICAgICAgciA9IHJlcXVlc3RzLmdldCh1cmwsIGhlYWRlcnM9aGVhZGVycyBvciB7fSwgdGltZW91dD0xNSwgKiprdykKICAgICAgICAgICAgci5lbmNvZGluZyA9ICd1dGYtOCcKICAgICAgICAgICAgcmV0dXJuIHIKCkFQUF9IT1NUID0gJ2h0dHA6Ly8yMy4yMjQuMTExLjcwOjc3ODgnCkFQUF9IRFIgPSB7J3VzZXItYWdlbnQnOiAnRGFydC8zLjEzIChkYXJ0OmlvKScsICd2ZXJzaW9uJzogJzIuMS42JywgJ3ZlcnNpb24tbnVtYmVyJzogJzIxMDgnLAogICAgICAgICAgICdway1pZCc6ICdjb20ub2tieXJrLnpqZHIuZHJlJywgJ2J1aWxkLXRpbWUnOiAnMTc4OTM2OTY3NjkyMScsICdwbGF0Zm9ybSc6ICdhbmRyb2lkJywKICAgICAgICAgICAncGxhdGZvcm0tdmVyc2lvbic6ICdQSloxMTBfMTYuMC4xMC41MDEoQ04wMSknLCAnY29udGVudC10eXBlJzogJ3RleHQvcGxhaW4nLAogICAgICAgICAgICdhY2NlcHQtZW5jb2RpbmcnOiAnZ3ppcCd9ClVBID0gJ01vemlsbGEvNS4wIChMaW51eDsgQW5kcm9pZCAxMzsgUEpaMTEwIEJ1aWxkL1RQMUEpIEFwcGxlV2ViS2l0LzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIENocm9tZS8xMjYuMC4wLjAgTW9iaWxlIFNhZmFyaS81MzcuMzYnClRZUEVTID0gWygnMicsICfliafpm4YnKSwgKCcxJywgJ+eUteW9sScpLCAoJzQnLCAn5Yqo5ryrJyksICgnMycsICfnu7zoibonKSwgKCcyNycsICfnuqrlvZUnKSwgKCcyOCcsICfnn63liacnKSwgKCcyOScsICflsJHlhL8nKV0KQ0FUX1QgPSB7JzInOiAnMTMlMkMxNCUyQzE1JTJDMTYlMkMyMSUyQzIyJTJDMjMlMkMyNCcsICcxJzogJzYlMkM3JTJDOCUyQzklMkMxMCUyQzExJTJDMTIlMkM0NScsCiAgICAgICAgICc0JzogJzI5JTJDMzAlMkMzMSUyQzMyJTJDMzMnLCAnMyc6ICcyNSUyQzI2JTJDMjclMkMyOCcsCiAgICAgICAgICcyNyc6ICcyMCcsICcyOCc6ICc0NicsICcyOSc6ICc0OSd9ClNfQ0FUID0gJ2h0dHBzOi8vY2oubHppYXBpLmNvbS9hcGkucGhwL3Byb3ZpZGUvdm9kL2F0L2pzb24vP2FjPWRldGFpbCZ0PSVzJnBnPSVzJwpTX0NBVDIgPSAnaHR0cHM6Ly9jai5mZnp5YXBpLmNvbS9hcGkucGhwL3Byb3ZpZGUvdm9kL2F0L2pzb24vP2FjPWRldGFpbCZ0PSVzJnBnPSVzJwpQQVJTRVIgPSAnaHR0cDovLzQ5LjIzMy4xODAuMTI3Ojg4MCcKVEFHX1BBUlNFUiA9IHsnazQnOiBQQVJTRVIgKyAnLzRreXMucGhwP3VybD0nfQpTX0xaID0gJ2h0dHBzOi8vY2oubHppYXBpLmNvbS9hcGkucGhwL3Byb3ZpZGUvdm9kL2F0L2pzb24vP2FjPWRldGFpbCZ3ZD0nClNfRkYgPSAnaHR0cHM6Ly9jai5mZnp5YXBpLmNvbS9hcGkucGhwL3Byb3ZpZGUvdm9kL2F0L2pzb24vP2FjPWRldGFpbCZ3ZD0nClNfWlVJID0gJ2h0dHBzOi8vYXBpLnp1aWRhcGkuY29tL2FwaS5waHAvcHJvdmlkZS92b2QvYXQvanNvbi8/YWM9ZGV0YWlsJndkPScKU19KUyA9ICdodHRwczovL2pzenlhcGkuY29tL2FwaS5waHAvcHJvdmlkZS92b2QvYXQvanNvbi8/YWM9ZGV0YWlsJndkPScKU19ITiA9ICdodHRwczovL3d3dy5ob25nbml1enkyLmNvbS9hcGkucGhwL3Byb3ZpZGUvdm9kL2F0L2pzb24vP2FjPWRldGFpbCZ3ZD0nClNfTUQgPSAnaHR0cHM6Ly9jYWlqaS5tb2R1YXBpLmNjL2FwaS5waHAvcHJvdmlkZS92b2QvYXQvanNvbi8/YWM9ZGV0YWlsJndkPScKU19ZWiA9ICdodHRwczovL2FwaS55enp5YXBpLmNvbS9hcGkucGhwL3Byb3ZpZGUvdm9kLz9hYz1kZXRhaWwmd2Q9JwpTX1laSSA9ICdodHRwczovL2FwaS55enp5YXBpLmNvbS9hcGkucGhwL3Byb3ZpZGUvdm9kLz9hYz12aWRlb2xpc3QmaWRzPScKU19LNCA9ICdodHRwczovL3d3dy40a3ZtLnRvcCcKTElORVMgPSBbKCfov73liacxJywgJ2x6JywgU19MWiksICgn5LiT57q/wrfpo57pgJ8nLCAnZmYnLCBTX0ZGKSwgKCfkuJPnur/Ct+acgOWkpycsICd6dWknLCBTX1pVSSksCiAgICAgICAgICgn5LiT57q/wrfmnoHpgJ8nLCAnanMnLCBTX0pTKSwgKCfkuJPnur/Ct+e6oueJmycsICdobicsIFNfSE4pLCAoJ+S4k+e6v8K36a2U6YO9JywgJ21kJywgU19NRCksCiAgICAgICAgICgn5LiT57q/wrflroflrpknLCAneXonLCBTX1laKSwgKCfkuJPnur/CtzRLJywgJ2s0JywgU19LNCldClZJREVPX0VYVFMgPSAnbTN1OHxtcDR8Zmx2fG1rdnxhdml8dHMnClNJVEVfS0VZID0gJ3podWlqdWRhcmVuJwpUTyA9IDEwCgoKY2xhc3MgU3BpZGVyKFNwaWRlcik6CiAgICBkZWYgaW5pdChzZWxmLCBleHRlbmQ9JycpOgogICAgICAgIHNlbGYuYmFzZSA9IEFQUF9IT1NUCiAgICAgICAgc2VsZi51YSA9IFVBCiAgICAgICAgc2VsZi5fYyA9IHt9CiAgICAgICAgc2VsZi5zID0gcmVxdWVzdHMuU2Vzc2lvbigpCiAgICAgICAgc2VsZi5zLmhlYWRlcnMudXBkYXRlKHsndXNlci1hZ2VudCc6IFVBfSkKICAgICAgICB0aHJlYWRpbmcuVGhyZWFkKHRhcmdldD1zZWxmLl93YXJtLCBkYWVtb249VHJ1ZSkuc3RhcnQoKQoKICAgIGRlZiBfd2FybShzZWxmKToKICAgICAgICBmb3IgXywgXywgdSBpbiBMSU5FUzoKICAgICAgICAgICAgdHJ5OgogICAgICAgICAgICAgICAgc2VsZi5zLmdldCh1ICsgJ3gnLCB0aW1lb3V0PTgpCiAgICAgICAgICAgIGV4Y2VwdCBFeGNlcHRpb246CiAgICAgICAgICAgICAgICBwYXNzCiAgICAgICAgZm9yIHRpZCwgXyBpbiBUWVBFUzoKICAgICAgICAgICAgdCA9IENBVF9ULmdldCh0aWQpCiAgICAgICAgICAgIGlmIHQ6CiAgICAgICAgICAgICAgICB0cnk6CiAgICAgICAgICAgICAgICAgICAgc2VsZi5fY2F0bGlzdChTX0NBVCAlICh0LCAxKSkKICAgICAgICAgICAgICAgIGV4Y2VwdCBFeGNlcHRpb246CiAgICAgICAgICAgICAgICAgICAgcGFzcwoKICAgIGRlZiBfcnEoc2VsZiwgdXJsLCBoZWFkZXJzPU5vbmUsIHRpbWVvdXQ9VE8pOgogICAgICAgIGZvciBfIGluIHJhbmdlKDIpOgogICAgICAgICAgICB0cnk6CiAgICAgICAgICAgICAgICByZXR1cm4gc2VsZi5zLmdldCh1cmwsIGhlYWRlcnM9aGVhZGVycyBvciBOb25lLCB0aW1lb3V0PXRpbWVvdXQpCiAgICAgICAgICAgIGV4Y2VwdCBFeGNlcHRpb246CiAgICAgICAgICAgICAgICBwYXNzCiAgICAgICAgcmV0dXJuIE5vbmUKCiAgICBkZWYgX2FwcChzZWxmLCBwYXRoKToKICAgICAgICBpZiBwYXRoIGluIHNlbGYuX2M6CiAgICAgICAgICAgIHJldHVybiBzZWxmLl9jW3BhdGhdCiAgICAgICAgciA9IHNlbGYuX3JxKHNlbGYuYmFzZSArIHBhdGgsIEFQUF9IRFIpCiAgICAgICAgZCA9IE5vbmUKICAgICAgICBpZiByIGlzIG5vdCBOb25lIGFuZCByLnN0YXR1c19jb2RlID09IDIwMDoKICAgICAgICAgICAgdHJ5OgogICAgICAgICAgICAgICAgZCA9IHIuanNvbigpCiAgICAgICAgICAgIGV4Y2VwdCBFeGNlcHRpb246CiAgICAgICAgICAgICAgICBkID0gTm9uZQogICAgICAgIHNlbGYuX2NbcGF0aF0gPSBkCiAgICAgICAgcmV0dXJuIGQKCiAgICBkZWYgX2FwcGxpc3Qoc2VsZiwgcGc9MSwgbGltaXQ9NTApOgogICAgICAgIGogPSBzZWxmLl9hcHAoJy9pbmRleC5waHAvYWpheC9kYXRhP21pZD0xJnBhZ2U9JWQmbGltaXQ9JWQnICUgKHBnLCBsaW1pdCkpCiAgICAgICAgcmV0dXJuIChqLmdldCgnbGlzdCcpIG9yIFtdKSBpZiBpc2luc3RhbmNlKGosIGRpY3QpIGVsc2UgW10KCiAgICBkZWYgX3dpZChzZWxmLCBzKToKICAgICAgICByZXR1cm4gJ3onICsgYmFzZTY0LnVybHNhZmVfYjY0ZW5jb2RlKChzIG9yICcnKS5lbmNvZGUoJ3V0Zi04JykpLmRlY29kZSgpLnJzdHJpcCgnPScpCgogICAgZGVmIF91bmlkKHNlbGYsIHMpOgogICAgICAgIHMgPSByZS5zdWIocideW3p3XScsICcnLCBzdHIocyBvciAnJykpCiAgICAgICAgdHJ5OgogICAgICAgICAgICByZXR1cm4gYmFzZTY0LnVybHNhZmVfYjY0ZGVjb2RlKHMgKyAnPScgKiAoLWxlbihzKSAlIDQpKS5kZWNvZGUoJ3V0Zi04JywgJ2lnbm9yZScpCiAgICAgICAgZXhjZXB0IEV4Y2VwdGlvbjoKICAgICAgICAgICAgcmV0dXJuICcnCgogICAgZGVmIF9pdGVtKHNlbGYsIG5hbWUsIHBpYz0nJywgcmVtYXJrPScnLCB5ZWFyPScnKToKICAgICAgICByZXR1cm4geyd2b2RfaWQnOiBzZWxmLl93aWQobmFtZSksICd2b2RfbmFtZSc6IG5hbWUgb3IgJycsICd2b2RfcGljJzogcGljIG9yICcnLAogICAgICAgICAgICAgICAgJ3ZvZF9yZW1hcmtzJzogcmVtYXJrIG9yICcnLCAndm9kX3llYXInOiB5ZWFyIG9yICcnfQoKICAgIGRlZiBfaXRlbXMoc2VsZiwgbHN0KToKICAgICAgICByZXR1cm4gW3NlbGYuX2l0ZW0odi5nZXQoJ3ZvZF9uYW1lJyksIHYuZ2V0KCd2b2RfcGljJyksIHYuZ2V0KCd2b2RfcmVtYXJrcycpLCB2LmdldCgndm9kX3llYXInKSkKICAgICAgICAgICAgICAgIGZvciB2IGluIGxzdCBpZiB2LmdldCgndm9kX25hbWUnKV0KCiAgICBkZWYgaG9tZUNvbnRlbnQoc2VsZiwgZmlsdGVyPUZhbHNlKToKICAgICAgICByZXR1cm4geydjbGFzcyc6IFt7J3R5cGVfaWQnOiBrLCAndHlwZV9uYW1lJzogdn0gZm9yIGssIHYgaW4gVFlQRVNdLAogICAgICAgICAgICAgICAgJ2xpc3QnOiBzZWxmLl9pdGVtcyhzZWxmLl9hcHBsaXN0KDEsIDIwKVs6MjBdKX0KCiAgICBkZWYgaG9tZVZpZGVvQ29udGVudChzZWxmKToKICAgICAgICByZXR1cm4geydsaXN0Jzogc2VsZi5faXRlbXMoc2VsZi5fYXBwbGlzdCgxLCAyMClbOjIwXSl9CgogICAgZGVmIF9jYXRmZXRjaChzZWxmLCB1cmwpOgogICAgICAgIHRyeToKICAgICAgICAgICAgciA9IHJlcXVlc3RzLmdldCh1cmwsIGhlYWRlcnM9eyd1c2VyLWFnZW50JzogVUF9LCB0aW1lb3V0PSg1LCA4KSkKICAgICAgICAgICAgaWYgci5zdGF0dXNfY29kZSAhPSAyMDA6CiAgICAgICAgICAgICAgICByZXR1cm4gW10sIDk5OTkKICAgICAgICAgICAgaiA9IHIuanNvbigpCiAgICAgICAgICAgIEwgPSBqLmdldCgnbGlzdCcpIG9yIFtdCiAgICAgICAgICAgIHJldHVybiBbc2VsZi5faXRlbSh2LmdldCgndm9kX25hbWUnKSwgdi5nZXQoJ3ZvZF9waWMnKSwgdi5nZXQoJ3ZvZF9yZW1hcmtzJyksIHYuZ2V0KCd2b2RfeWVhcicpKQogICAgICAgICAgICAgICAgICAgIGZvciB2IGluIEwgaWYgdi5nZXQoJ3ZvZF9uYW1lJyldLCBpbnQoai5nZXQoJ3BhZ2Vjb3VudCcpIG9yIDk5OTkpCiAgICAgICAgZXhjZXB0IEV4Y2VwdGlvbjoKICAgICAgICAgICAgcmV0dXJuIFtdLCA5OTk5CgogICAgZGVmIF9jYXRsaXN0KHNlbGYsIHVybCk6CiAgICAgICAga2V5ID0gJ2M6JyArIHVybAogICAgICAgIGlmIGtleSBpbiBzZWxmLl9jOgogICAgICAgICAgICByZXR1cm4gc2VsZi5fY1trZXldCiAgICAgICAgZXggPSBUaHJlYWRQb29sRXhlY3V0b3IobWF4X3dvcmtlcnM9MSkKICAgICAgICBmdSA9IGV4LnN1Ym1pdChzZWxmLl9jYXRmZXRjaCwgdXJsKQogICAgICAgIHRyeToKICAgICAgICAgICAgb3V0LCBwYyA9IGZ1LnJlc3VsdCh0aW1lb3V0PTEyKQogICAgICAgIGV4Y2VwdCBFeGNlcHRpb246CiAgICAgICAgICAgIG91dCwgcGMgPSBbXSwgOTk5OQogICAgICAgIGV4LnNodXRkb3duKHdhaXQ9RmFsc2UpCiAgICAgICAgaWYgb3V0OgogICAgICAgICAgICBzZWxmLl9jW2tleV0gPSAob3V0LCBwYykKICAgICAgICByZXR1cm4gb3V0LCBwYwoKICAgIGRlZiBjYXRlZ29yeUNvbnRlbnQoc2VsZiwgdGlkLCBwZz0xLCBmaWx0ZXI9RmFsc2UsIGV4dGVuZD0nJyk6CiAgICAgICAgcG4gPSBtYXgoaW50KHN0cihwZykgb3IgMSksIDEpCiAgICAgICAgdCA9IENBVF9ULmdldChzdHIodGlkKSkKICAgICAgICBpZiBub3QgdDoKICAgICAgICAgICAgcmV0dXJuIHsnbGlzdCc6IFtdLCAncGFnZSc6IHBuLCAncGFnZWNvdW50JzogOTk5OSwgJ2xpbWl0JzogMjAsICd0b3RhbCc6IDB9CiAgICAgICAgb3V0LCBwYyA9IHNlbGYuX2NhdGxpc3QoU19DQVQgJSAodCwgcG4pKQogICAgICAgIGlmIG5vdCBvdXQ6CiAgICAgICAgICAgIGFsdCA9ICczNicgaWYgdCA9PSAnNDYnIGVsc2UgdAogICAgICAgICAgICBvMiwgcGMyID0gc2VsZi5fY2F0bGlzdChTX0NBVDIgJSAoYWx0LCBwbikpCiAgICAgICAgICAgIGlmIG8yOgogICAgICAgICAgICAgICAgb3V0LCBwYyA9IG8yLCBwYzIKICAgICAgICByZXR1cm4geydsaXN0Jzogb3V0LCAncGFnZSc6IHBuLCAncGFnZWNvdW50JzogcGMsICdsaW1pdCc6IDIwLCAndG90YWwnOiA5OTk5OTl9CgogICAgZGVmIHNlYXJjaENvbnRlbnQoc2VsZiwga2V5LCBxdWljaz1GYWxzZSwgcGc9JzEnKToKICAgICAgICBvdXQgPSBbXQogICAgICAgIGogPSBzZWxmLl9hcHAoJy9pbmRleC5waHAvYWpheC9zdWdnZXN0P21pZD0xJndkPScgKyBxdW90ZShrZXkgb3IgJycpKQogICAgICAgIGZvciB2IGluICgoaiBvciB7fSkuZ2V0KCdsaXN0Jykgb3IgW10pOgogICAgICAgICAgICBvdXQuYXBwZW5kKHNlbGYuX2l0ZW0odi5nZXQoJ25hbWUnKSwgdi5nZXQoJ3BpYycpKSkKICAgICAgICBpZiBub3Qgb3V0OgogICAgICAgICAgICBmb3IgdiBpbiBzZWxmLl9hcHBsaXN0KDEsIDUwKToKICAgICAgICAgICAgICAgIGlmIGtleSBhbmQga2V5IGluICh2LmdldCgndm9kX25hbWUnKSBvciAnJyk6CiAgICAgICAgICAgICAgICAgICAgb3V0LmFwcGVuZChzZWxmLl9pdGVtKHYuZ2V0KCd2b2RfbmFtZScpLCB2LmdldCgndm9kX3BpYycpLCB2LmdldCgndm9kX3JlbWFya3MnKSwgdi5nZXQoJ3ZvZF95ZWFyJykpKQogICAgICAgIHJldHVybiB7J2xpc3QnOiBvdXR9CgogICAgZGVmIF9waWMoc2VsZiwgbmFtZSk6CiAgICAgICAgciA9IHNlbGYuX3JxKFNfTFogKyBxdW90ZShuYW1lKSwgTm9uZSwgVE8pCiAgICAgICAgaWYgciBpcyBOb25lIG9yIHIuc3RhdHVzX2NvZGUgIT0gMjAwOgogICAgICAgICAgICByZXR1cm4gJycKICAgICAgICB0cnk6CiAgICAgICAgICAgIGZvciB2IGluIChyLmpzb24oKS5nZXQoJ2xpc3QnKSBvciBbXSk6CiAgICAgICAgICAgICAgICBpZiBzZWxmLl9tYXRjaChuYW1lLCB2LmdldCgndm9kX25hbWUnKSkgYW5kIHYuZ2V0KCd2b2RfcGljJyk6CiAgICAgICAgICAgICAgICAgICAgcmV0dXJuIHYuZ2V0KCd2b2RfcGljJykKICAgICAgICBleGNlcHQgRXhjZXB0aW9uOgogICAgICAgICAgICBwYXNzCiAgICAgICAgcmV0dXJuICcnCgogICAgZGVmIF9waWNrKHNlbGYsIGdyb3Vwcyk6CiAgICAgICAgZm9yIGcgaW4gZ3JvdXBzOgogICAgICAgICAgICBpZiAnbTN1OCcgaW4gZyBhbmQgJy9zaGFyZS8nIG5vdCBpbiBnOgogICAgICAgICAgICAgICAgcmV0dXJuIGcKICAgICAgICBmb3IgZyBpbiBncm91cHM6CiAgICAgICAgICAgIGlmICdtM3U4JyBpbiBnOgogICAgICAgICAgICAgICAgcmV0dXJuIGcKICAgICAgICBmb3IgZyBpbiBncm91cHM6CiAgICAgICAgICAgIGlmICcvc2hhcmUvJyBub3QgaW4gZzoKICAgICAgICAgICAgICAgIHJldHVybiBnCiAgICAgICAgcmV0dXJuIGdyb3Vwc1swXSBpZiBncm91cHMgZWxzZSAnJwoKICAgIGRlZiBfbm9ybShzZWxmLCBzKToKICAgICAgICByZXR1cm4gcmUuc3ViKHInW15cdTRlMDAtXHU5ZmE1QS1aYS16MC05XScsICcnLCBzIG9yICcnKQoKICAgIGRlZiBfbWF0Y2goc2VsZiwgd2FudCwgZ290KToKICAgICAgICBhLCBiID0gc2VsZi5fbm9ybSh3YW50KSwgc2VsZi5fbm9ybShnb3QpCiAgICAgICAgcmV0dXJuIGJvb2woYSBhbmQgYiBhbmQgKGEgPT0gYiBvciBhIGluIGIgb3IgYiBpbiBhKSkKCiAgICBkZWYgX2VwX2Zyb21fanNvbihzZWxmLCB0YWcsIGhvc3RfdXJsLCB3YW50PScnKToKICAgICAgICByID0gc2VsZi5fcnEoaG9zdF91cmwsIE5vbmUsIFRPKQogICAgICAgIGVwcyA9IFtdCiAgICAgICAgaWYgciBpcyBOb25lIG9yIHIuc3RhdHVzX2NvZGUgIT0gMjAwOgogICAgICAgICAgICByZXR1cm4gZXBzCiAgICAgICAgdHJ5OgogICAgICAgICAgICBMID0gKHIuanNvbigpLmdldCgnbGlzdCcpIG9yIFtdKQogICAgICAgIGV4Y2VwdCBFeGNlcHRpb246CiAgICAgICAgICAgIHJldHVybiBlcHMKICAgICAgICBmb3IgdiBpbiBMOgogICAgICAgICAgICBpZiB3YW50IGFuZCBub3Qgc2VsZi5fbWF0Y2god2FudCwgdi5nZXQoJ3ZvZF9uYW1lJykpOgogICAgICAgICAgICAgICAgY29udGludWUKICAgICAgICAgICAgcHUgPSB2LmdldCgndm9kX3BsYXlfdXJsJykgb3IgJycKICAgICAgICAgICAgaWYgbm90IHB1OgogICAgICAgICAgICAgICAgY29udGludWUKICAgICAgICAgICAgcGljayA9IHNlbGYuX3BpY2soW2cgZm9yIGcgaW4gcHUuc3BsaXQoJyQkJCcpIGlmICckJyBpbiBnXSkKICAgICAgICAgICAgaWYgbm90IHBpY2s6CiAgICAgICAgICAgICAgICBjb250aW51ZQogICAgICAgICAgICBmb3Igc2VnIGluIHBpY2suc3BsaXQoJyMnKToKICAgICAgICAgICAgICAgIGlmICckJyBub3QgaW4gc2VnOgogICAgICAgICAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgICAgICAgICBubSwgdSA9IHNlZy5zcGxpdCgnJCcsIDEpCiAgICAgICAgICAgICAgICB1ID0gdS5zdHJpcCgpCiAgICAgICAgICAgICAgICBpZiB1LnN0YXJ0c3dpdGgoJ2h0dHAnKSBvciB1LnN0YXJ0c3dpdGgoJy8vJyk6CiAgICAgICAgICAgICAgICAgICAgZXBzLmFwcGVuZCgocmUuc3ViKHInWyMkfF0nLCAnJywgbm0pLnN0cmlwKCkgb3IgKCfnrKwlZOmbhicgJSAobGVuKGVwcykgKyAxKSksICclc3wlcycgJSAodGFnLCB1KSkpCiAgICAgICAgICAgIGlmIGVwczoKICAgICAgICAgICAgICAgIGJyZWFrCiAgICAgICAgcmV0dXJuIGVwcwoKICAgIGRlZiBfZXBfeXooc2VsZiwgdGFnLCBuYW1lKToKICAgICAgICByID0gc2VsZi5fcnEoU19ZWiArIHF1b3RlKG5hbWUpLCBOb25lLCBUTykKICAgICAgICBpZiByIGlzIE5vbmUgb3Igci5zdGF0dXNfY29kZSAhPSAyMDA6CiAgICAgICAgICAgIHJldHVybiBbXQogICAgICAgIGlkcyA9IFtdCiAgICAgICAgZm9yIGJsayBpbiByZS5maW5kYWxsKHInPHZpZGVvPiguKj8pPC92aWRlbz4nLCByLnRleHQsIHJlLlMpOgogICAgICAgICAgICBtbSA9IHJlLnNlYXJjaChyJzxuYW1lPiguKj8pPC9uYW1lPicsIGJsaywgcmUuUykKICAgICAgICAgICAgbm12ID0gcmUuc3ViKHInPCFcW0NEQVRBXFt8XF1cXT4nLCAnJywgbW0uZ3JvdXAoMSkpLnN0cmlwKCkgaWYgbW0gZWxzZSAnJwogICAgICAgICAgICBtaSA9IHJlLnNlYXJjaChyJzxpZD4oXGQrKTwvaWQ+JywgYmxrKQogICAgICAgICAgICBpZiBtaSBhbmQgKG5vdCBuYW1lIG9yIHNlbGYuX21hdGNoKG5hbWUsIG5tdikpOgogICAgICAgICAgICAgICAgaWRzLmFwcGVuZChtaS5ncm91cCgxKSkKICAgICAgICBlcHMgPSBbXQogICAgICAgIGZvciB2aWQgaW4gaWRzWzoyXToKICAgICAgICAgICAgcjIgPSBzZWxmLl9ycShTX1laSSArIHZpZCwgTm9uZSwgVE8pCiAgICAgICAgICAgIGlmIHIyIGlzIE5vbmUgb3IgcjIuc3RhdHVzX2NvZGUgIT0gMjAwOgogICAgICAgICAgICAgICAgY29udGludWUKICAgICAgICAgICAgZ3JwID0gW20uZ3JvdXAoMSkgZm9yIG0gaW4gcmUuZmluZGl0ZXIocic8ZGQgZmxhZz0iW14iXSoiPiguKj8pPC9kZD4nLCByMi50ZXh0LCByZS5TKV0KICAgICAgICAgICAgaWYgbm90IGdycDoKICAgICAgICAgICAgICAgIG11ID0gcmUuc2VhcmNoKHInPHBsYXlfdXJsPiguKj8pPC9wbGF5X3VybD4nLCByMi50ZXh0LCByZS5TKQogICAgICAgICAgICAgICAgZ3JwID0gW211Lmdyb3VwKDEpXSBpZiBtdSBlbHNlIFtdCiAgICAgICAgICAgIHBpY2sgPSBzZWxmLl9waWNrKFtyZS5zdWIocic8IVxbQ0RBVEFcW3xcXVxdPicsICcnLCBnKSBmb3IgZyBpbiBncnBdKQogICAgICAgICAgICBmb3Igc2VnIGluIHBpY2suc3BsaXQoJyMnKToKICAgICAgICAgICAgICAgIGlmICckJyBub3QgaW4gc2VnOgogICAgICAgICAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgICAgICAgICBubSwgdSA9IHNlZy5zcGxpdCgnJCcsIDEpCiAgICAgICAgICAgICAgICB1ID0gcmUuc3ViKHInPCFcW0NEQVRBXFt8XF1cXT4nLCAnJywgdSkuc3RyaXAoKQogICAgICAgICAgICAgICAgaWYgdS5zdGFydHN3aXRoKCdodHRwJykgb3IgdS5zdGFydHN3aXRoKCcvLycpOgogICAgICAgICAgICAgICAgICAgIGVwcy5hcHBlbmQoKHJlLnN1YihyJ1sjJHxdJywgJycsIG5tKS5zdHJpcCgpIG9yICgn56ysJWTpm4YnICUgKGxlbihlcHMpICsgMSkpLCAnJXN8JXMnICUgKHRhZywgdSkpKQogICAgICAgICAgICBpZiBlcHM6CiAgICAgICAgICAgICAgICBicmVhawogICAgICAgIHJldHVybiBlcHMKCiAgICBkZWYgX2VwXzRrdm0oc2VsZiwgbmFtZSk6CiAgICAgICAgciA9IHNlbGYuX3JxKFNfSzQgKyAnL3NlYXJjaD9xPScgKyBxdW90ZShuYW1lKSwgTm9uZSwgVE8pCiAgICAgICAgaWYgciBpcyBOb25lIG9yIHIuc3RhdHVzX2NvZGUgIT0gMjAwOgogICAgICAgICAgICByZXR1cm4gW10KICAgICAgICBoaXQgPSAnJwogICAgICAgIGZvciBtIGluIHJlLmZpbmRpdGVyKHInaHJlZj0iKC9wbGF5L1thLXowLTldKykiW14+XSo+KC57MCwyMDB9Pyk8L2E+Jywgci50ZXh0LCByZS5TKToKICAgICAgICAgICAgaWYgbmFtZSBhbmQgbmFtZSBpbiByZS5zdWIocic8W14+XSs+JywgJycsIG0uZ3JvdXAoMikpOgogICAgICAgICAgICAgICAgaGl0ID0gbS5ncm91cCgxKQogICAgICAgICAgICAgICAgYnJlYWsKICAgICAgICBpZiBub3QgaGl0OgogICAgICAgICAgICBtID0gcmUuc2VhcmNoKHInaHJlZj0iKC9wbGF5L1thLXowLTldKykiJywgci50ZXh0KQogICAgICAgICAgICBoaXQgPSBtLmdyb3VwKDEpIGlmIG0gZWxzZSAnJwogICAgICAgIGlmIG5vdCBoaXQ6CiAgICAgICAgICAgIHJldHVybiBbXQogICAgICAgIHIyID0gc2VsZi5fcnEoU19LNCArIGhpdCwgTm9uZSwgVE8pCiAgICAgICAgaWYgcjIgaXMgTm9uZSBvciByMi5zdGF0dXNfY29kZSAhPSAyMDA6CiAgICAgICAgICAgIHJldHVybiBbXQogICAgICAgIHRtID0gcmUuc2VhcmNoKHInPHRpdGxlPiguKj8pPC90aXRsZT4nLCByMi50ZXh0LCByZS5TKQogICAgICAgIGlmIG5hbWUgYW5kIHRtIGFuZCBub3Qgc2VsZi5fbWF0Y2gobmFtZSwgcmUuc3ViKHInPFtePl0rPicsICcnLCB0bS5ncm91cCgxKSkpOgogICAgICAgICAgICByZXR1cm4gW10KICAgICAgICBwcmUgPSBoaXRbOjddCiAgICAgICAgc2VxID0gW10KICAgICAgICBmb3IgczIgaW4gcmUuZmluZGFsbChyJ2hyZWY9IigvcGxheS9bYS16MC05XSspIicsIHIyLnRleHQpOgogICAgICAgICAgICBpZiBzMi5zdGFydHN3aXRoKHByZSkgYW5kIHMyIG5vdCBpbiBzZXE6CiAgICAgICAgICAgICAgICBzZXEuYXBwZW5kKHMyKQogICAgICAgIGlmIGxlbihzZXEpIDwgMjoKICAgICAgICAgICAgcmV0dXJuIFtdCiAgICAgICAgcmV0dXJuIFsoJ+esrCUwMmTpm4YnICUgaSwgJ2s0fCcgKyBTX0s0ICsgcykgZm9yIGksIHMgaW4gZW51bWVyYXRlKHNlcSwgMSldCgogICAgZGVmIF9saW5lX2VwcyhzZWxmLCBubSwgdGFnLCBzcmMsIG5hbWUpOgogICAgICAgIHRyeToKICAgICAgICAgICAgaWYgdGFnID09ICdrNCc6CiAgICAgICAgICAgICAgICByZXR1cm4gc2VsZi5fZXBfNGt2bShuYW1lKQogICAgICAgICAgICBpZiB0YWcgPT0gJ3l6JzoKICAgICAgICAgICAgICAgIHJldHVybiBzZWxmLl9lcF95eih0YWcsIG5hbWUpCiAgICAgICAgICAgIHVybCA9IHNyYyArIHF1b3RlKG5hbWUpCiAgICAgICAgICAgIHJldHVybiBzZWxmLl9lcF9mcm9tX2pzb24odGFnLCB1cmwsIG5hbWUpCiAgICAgICAgZXhjZXB0IEV4Y2VwdGlvbjoKICAgICAgICAgICAgcmV0dXJuIFtdCgogICAgZGVmIGRldGFpbENvbnRlbnQoc2VsZiwgaWRzLCBxdWljaz0nMScpOgogICAgICAgIHZpZCA9IHN0cihpZHNbMF0gaWYgaXNpbnN0YW5jZShpZHMsIGxpc3QpIGVsc2UgaWRzIG9yICcnKQogICAgICAgIG5hbWUgPSBzZWxmLl91bmlkKHZpZCkKICAgICAgICBpZiBub3QgbmFtZToKICAgICAgICAgICAgcmV0dXJuIHsnbGlzdCc6IFt7J3ZvZF9pZCc6IHZpZCwgJ3ZvZF9uYW1lJzogJyd9XX0KICAgICAgICBrZXkgPSAnZDonICsgbmFtZQogICAgICAgIGlmIGtleSBpbiBzZWxmLl9jOgogICAgICAgICAgICByZXR1cm4gc2VsZi5fY1trZXldCiAgICAgICAgZXggPSBUaHJlYWRQb29sRXhlY3V0b3IobWF4X3dvcmtlcnM9OCkKICAgICAgICBmdXMgPSBbZXguc3VibWl0KHNlbGYuX2xpbmVfZXBzLCBubSwgdGFnLCBzcmMsIG5hbWUpIGZvciBubSwgdGFnLCBzcmMgaW4gTElORVNdCiAgICAgICAgZW5kID0gdGltZS50aW1lKCkgKyAxMgogICAgICAgIGdvdCwgbWlzcyA9IHt9LCBbXQogICAgICAgIGZvciBpLCBmdSBpbiBlbnVtZXJhdGUoZnVzKToKICAgICAgICAgICAgdHJ5OgogICAgICAgICAgICAgICAgZXBzID0gZnUucmVzdWx0KHRpbWVvdXQ9bWF4KDAuNSwgZW5kIC0gdGltZS50aW1lKCkpKQogICAgICAgICAgICBleGNlcHQgRXhjZXB0aW9uOgogICAgICAgICAgICAgICAgZXBzID0gW10KICAgICAgICAgICAgaWYgZXBzOgogICAgICAgICAgICAgICAgZ290W2ldID0gZXBzCiAgICAgICAgICAgIGVsc2U6CiAgICAgICAgICAgICAgICBtaXNzLmFwcGVuZChpKQogICAgICAgIGZvciBpIGluIG1pc3M6CiAgICAgICAgICAgIHRyeToKICAgICAgICAgICAgICAgIGVwcyA9IGZ1c1tpXS5yZXN1bHQodGltZW91dD00KQogICAgICAgICAgICBleGNlcHQgRXhjZXB0aW9uOgogICAgICAgICAgICAgICAgZXBzID0gW10KICAgICAgICAgICAgaWYgZXBzOgogICAgICAgICAgICAgICAgZ290W2ldID0gZXBzCiAgICAgICAgbGluZXMgPSBbKExJTkVTW2ldWzBdLCBnb3RbaV0pIGZvciBpIGluIHJhbmdlKGxlbihMSU5FUykpIGlmIGkgaW4gZ290XQogICAgICAgIGV4LnNodXRkb3duKHdhaXQ9RmFsc2UpCiAgICAgICAgcGljID0gJycKICAgICAgICBqID0gc2VsZi5fYXBwKCcvaW5kZXgucGhwL2FqYXgvc3VnZ2VzdD9taWQ9MSZ3ZD0nICsgcXVvdGUobmFtZSkpCiAgICAgICAgZm9yIHYgaW4gKChqIG9yIHt9KS5nZXQoJ2xpc3QnKSBvciBbXSk6CiAgICAgICAgICAgIGlmICh2LmdldCgnbmFtZScpIG9yICcnKS5zdHJpcCgpID09IG5hbWU6CiAgICAgICAgICAgICAgICBwaWMgPSB2LmdldCgncGljJykgb3IgJycKICAgICAgICAgICAgICAgIGJyZWFrCiAgICAgICAgaWYgbm90IHBpYzoKICAgICAgICAgICAgcGljID0gc2VsZi5fcGljKG5hbWUpCiAgICAgICAgZCA9IHsndm9kX2lkJzogdmlkLCAndm9kX25hbWUnOiBuYW1lLCAndm9kX3BpYyc6IHBpYywgJ3ZvZF9jb250ZW50JzogbmFtZSwgJ3ZvZF9yZW1hcmtzJzogJyd9CiAgICAgICAgaWYgbGluZXM6CiAgICAgICAgICAgIGRbJ3ZvZF9wbGF5X2Zyb20nXSA9ICckJCQnLmpvaW4oeFswXSBmb3IgeCBpbiBsaW5lcykKICAgICAgICAgICAgZFsndm9kX3BsYXlfdXJsJ10gPSAnJCQkJy5qb2luKCcjJy5qb2luKCclcyQlcycgJSAobiwgdSkgZm9yIG4sIHUgaW4geFsxXSkgZm9yIHggaW4gbGluZXMpCiAgICAgICAgciA9IHsnbGlzdCc6IFtkXX0KICAgICAgICBzZWxmLl9jW2tleV0gPSByCiAgICAgICAgcmV0dXJuIHIKCiAgICBkZWYgX3ZpYV9wYXJzZXIoc2VsZiwgdXJsKToKICAgICAgICByID0gc2VsZi5fcnEoUEFSU0VSICsgJy9mZi5waHA/dXJsPScgKyBxdW90ZSh1cmwsIHNhZmU9JycpLAogICAgICAgICAgICAgICAgICAgICB7J3VzZXItYWdlbnQnOiAnb2todHRwLzMuMTIuMCcsICdhY2NlcHQtZW5jb2RpbmcnOiAnZ3ppcCd9LCAxMikKICAgICAgICBpZiByIGlzIE5vbmU6CiAgICAgICAgICAgIHJldHVybiAnJwogICAgICAgIHRyeToKICAgICAgICAgICAgaiA9IHIuanNvbigpCiAgICAgICAgICAgIGlmIHN0cihqLmdldCgnY29kZScpKSA9PSAnMjAwJyBhbmQgai5nZXQoJ3VybCcpOgogICAgICAgICAgICAgICAgcmV0dXJuIGouZ2V0KCd1cmwnKQogICAgICAgIGV4Y2VwdCBFeGNlcHRpb246CiAgICAgICAgICAgIHBhc3MKICAgICAgICByZXR1cm4gJycKCiAgICBkZWYgcGxheWVyQ29udGVudChzZWxmLCBmbGFnLCBpZCwgdmlwRmxhZ3M9Tm9uZSk6CiAgICAgICAgcmF3ID0gc3RyKGlkIG9yICcnKQogICAgICAgIHRhZywgXywgcGF5bG9hZCA9IHJhdy5wYXJ0aXRpb24oJ3wnKQogICAgICAgIHJlYWwgPSBwYXlsb2FkLnN0cmlwKCkKICAgICAgICBwcmUgPSBUQUdfUEFSU0VSLmdldCh0YWcpCiAgICAgICAgaWYgcHJlIGFuZCByZWFsLnN0YXJ0c3dpdGgoJ2h0dHAnKToKICAgICAgICAgICAgciA9IHNlbGYuX3JxKHByZSArIHF1b3RlKHJlYWwsIHNhZmU9JycpLCB7J3VzZXItYWdlbnQnOiAnb2todHRwLzMuMTIuMCcsICdhY2NlcHQtZW5jb2RpbmcnOiAnZ3ppcCd9LCAxMikKICAgICAgICAgICAgaWYgciBpcyBub3QgTm9uZToKICAgICAgICAgICAgICAgIHRyeToKICAgICAgICAgICAgICAgICAgICBqID0gci5qc29uKCkKICAgICAgICAgICAgICAgICAgICBpZiBzdHIoai5nZXQoJ2NvZGUnKSkgPT0gJzIwMCcgYW5kIGouZ2V0KCd1cmwnKToKICAgICAgICAgICAgICAgICAgICAgICAgcmVhbCA9IGouZ2V0KCd1cmwnKQogICAgICAgICAgICAgICAgZXhjZXB0IEV4Y2VwdGlvbjoKICAgICAgICAgICAgICAgICAgICBtID0gcmUuc2VhcmNoKHInaHR0cHM/Oi8vW15ccyJcJzw+XFxdK1wuKD86bTN1OHxtcDQpW15ccyJcJzw+XFxdKicsIHIudGV4dCBvciAnJykKICAgICAgICAgICAgICAgICAgICBpZiBtOgogICAgICAgICAgICAgICAgICAgICAgICByZWFsID0gbS5ncm91cCgwKQogICAgICAgIGlmIHJlYWwuc3RhcnRzd2l0aCgnLy8nKToKICAgICAgICAgICAgcmVhbCA9ICdodHRwczonICsgcmVhbAogICAgICAgIGlmIHJlYWwuc3RhcnRzd2l0aCgnaHR0cCcpIGFuZCAnNDkuMjMzLjE4MC4xMjcnIG5vdCBpbiByZWFsOgogICAgICAgICAgICByID0gc2VsZi5fcnEocmVhbCwgeyd1c2VyLWFnZW50JzogVUF9LCA2KQogICAgICAgICAgICBpZiByIGlzIE5vbmUgb3Igci5zdGF0dXNfY29kZSAhPSAyMDAgb3IgbGVuKHIuY29udGVudCkgPCAxNjoKICAgICAgICAgICAgICAgIGFsdCA9IHNlbGYuX3ZpYV9wYXJzZXIocmVhbCkKICAgICAgICAgICAgICAgIGlmIGFsdDoKICAgICAgICAgICAgICAgICAgICByZWFsID0gYWx0CiAgICAgICAgcmV0dXJuIHsncGFyc2UnOiAwLCAncGxheVVybCc6ICcnLCAndXJsJzogcmVhbCwgJ2hlYWRlcic6IHsnVXNlci1BZ2VudCc6IFVBfX0KCiAgICBkZWYgaXNWaWRlb0Zvcm1hdChzZWxmLCB1cmwpOgogICAgICAgIHJldHVybiBib29sKHVybCkgYW5kIGJvb2wocmUuc2VhcmNoKHInXC4oPzolcykoPzpcP3wkKScgJSAoVklERU9fRVhUUyBvciAnbTN1OCcpLCB1cmwsIHJlLkkpKQoKICAgIGRlZiBtYW51YWxWaWRlb0NoZWNrKHNlbGYpOgogICAgICAgIHJldHVybiBGYWxzZQoKICAgIGRlZiBnZXREZXBlbmRlbmNlKHNlbGYpOgogICAgICAgIHJldHVybiAnJwoKICAgIGRlZiBkZXN0cm95KHNlbGYpOgogICAgICAgIHRyeToKICAgICAgICAgICAgc2VsZi5fYy5jbGVhcigpCiAgICAgICAgZXhjZXB0IEV4Y2VwdGlvbjoKICAgICAgICAgICAgcGFzcwoKICAgIGRlZiBwcm9ncmVzc1ZpZGVvKHNlbGYsIHNwZWVkLCB0aW1lLCBlbmQpOgogICAgICAgIHJldHVybiBGYWxzZQoKICAgIGRlZiBzZXRWaWRlb0ZsYWdzKHNlbGYsIHNpdGVLZXksIGZsYWdzKToKICAgICAgICByZXR1cm4gTm9uZQoKICAgIGRlZiBsb2NhbFByb3h5KHNlbGYsIHBhcmFtKToKICAgICAgICByZXR1cm4gTm9uZQ==
+# -*- coding: utf-8 -*-
+import sys, re, json, base64, time, threading
+from urllib.parse import quote
+from concurrent.futures import ThreadPoolExecutor
+import requests
+
+sys.path.append('..')
+try:
+    from base.spider import Spider
+except ImportError:
+    class Spider:
+        def fetch(self, url, headers=None, **kw):
+            kw.pop('timeout', None)
+            r = requests.get(url, headers=headers or {}, timeout=15, **kw)
+            r.encoding = 'utf-8'
+            return r
+
+APP_HOST = 'http://23.224.111.70:7788'
+APP_HDR = {'user-agent': 'Dart/3.13 (dart:io)', 'version': '2.1.6', 'version-number': '2108',
+           'pk-id': 'com.okbyrk.zjdr.dre', 'build-time': '1789369676921', 'platform': 'android',
+           'platform-version': 'PJZ110_16.0.10.501(CN01)', 'content-type': 'text/plain',
+           'accept-encoding': 'gzip'}
+UA = 'Mozilla/5.0 (Linux; Android 13; PJZ110 Build/TP1A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36'
+TYPES = [('2', '剧集'), ('1', '电影'), ('4', '动漫'), ('3', '综艺'), ('27', '纪录'), ('28', '短剧'), ('29', '少儿')]
+CAT_T = {'2': '13%2C14%2C15%2C16%2C21%2C22%2C23%2C24', '1': '6%2C7%2C8%2C9%2C10%2C11%2C12%2C45',
+         '4': '29%2C30%2C31%2C32%2C33', '3': '25%2C26%2C27%2C28',
+         '27': '20', '28': '46', '29': '49'}
+S_CAT = 'https://cj.lziapi.com/api.php/provide/vod/at/json/?ac=detail&t=%s&pg=%s'
+S_CAT2 = 'https://cj.ffzyapi.com/api.php/provide/vod/at/json/?ac=detail&t=%s&pg=%s'
+PARSER = 'http://49.233.180.127:880'
+TAG_PARSER = {'k4': PARSER + '/4kys.php?url='}
+S_LZ = 'https://cj.lziapi.com/api.php/provide/vod/at/json/?ac=detail&wd='
+S_FF = 'https://cj.ffzyapi.com/api.php/provide/vod/at/json/?ac=detail&wd='
+S_ZUI = 'https://api.zuidapi.com/api.php/provide/vod/at/json/?ac=detail&wd='
+S_JS = 'https://jszyapi.com/api.php/provide/vod/at/json/?ac=detail&wd='
+S_HN = 'https://www.hongniuzy2.com/api.php/provide/vod/at/json/?ac=detail&wd='
+S_MD = 'https://caiji.moduapi.cc/api.php/provide/vod/at/json/?ac=detail&wd='
+S_YZ = 'https://api.yzzyapi.com/api.php/provide/vod/?ac=detail&wd='
+S_YZI = 'https://api.yzzyapi.com/api.php/provide/vod/?ac=videolist&ids='
+S_K4 = 'https://www.4kvm.top'
+LINES = [('追剧1', 'lz', S_LZ), ('专线·飞速', 'ff', S_FF), ('专线·最大', 'zui', S_ZUI),
+         ('专线·极速', 'js', S_JS), ('专线·红牛', 'hn', S_HN), ('专线·魔都', 'md', S_MD),
+         ('专线·宇宙', 'yz', S_YZ), ('专线·4K', 'k4', S_K4)]
+VIDEO_EXTS = 'm3u8|mp4|flv|mkv|avi|ts'
+SITE_KEY = 'zhuijudaren'
+TO = 10
+
+
+class Spider(Spider):
+    def init(self, extend=''):
+        self.base = APP_HOST
+        self.ua = UA
+        self._c = {}
+        self.s = requests.Session()
+        self.s.headers.update({'user-agent': UA})
+        threading.Thread(target=self._warm, daemon=True).start()
+
+    def _warm(self):
+        for _, _, u in LINES:
+            try:
+                self.s.get(u + 'x', timeout=8)
+            except Exception:
+                pass
+        for tid, _ in TYPES:
+            t = CAT_T.get(tid)
+            if t:
+                try:
+                    self._catlist(S_CAT % (t, 1))
+                except Exception:
+                    pass
+
+    def _rq(self, url, headers=None, timeout=TO):
+        for _ in range(2):
+            try:
+                return self.s.get(url, headers=headers or None, timeout=timeout)
+            except Exception:
+                pass
+        return None
+
+    def _app(self, path):
+        if path in self._c:
+            return self._c[path]
+        r = self._rq(self.base + path, APP_HDR)
+        d = None
+        if r is not None and r.status_code == 200:
+            try:
+                d = r.json()
+            except Exception:
+                d = None
+        self._c[path] = d
+        return d
+
+    def _applist(self, pg=1, limit=50):
+        j = self._app('/index.php/ajax/data?mid=1&page=%d&limit=%d' % (pg, limit))
+        return (j.get('list') or []) if isinstance(j, dict) else []
+
+    def _wid(self, s):
+        return 'z' + base64.urlsafe_b64encode((s or '').encode('utf-8')).decode().rstrip('=')
+
+    def _unid(self, s):
+        s = re.sub(r'^[zw]', '', str(s or ''))
+        try:
+            return base64.urlsafe_b64decode(s + '=' * (-len(s) % 4)).decode('utf-8', 'ignore')
+        except Exception:
+            return ''
+
+    def _item(self, name, pic='', remark='', year=''):
+        return {'vod_id': self._wid(name), 'vod_name': name or '', 'vod_pic': pic or '',
+                'vod_remarks': remark or '', 'vod_year': year or ''}
+
+    def _items(self, lst):
+        return [self._item(v.get('vod_name'), v.get('vod_pic'), v.get('vod_remarks'), v.get('vod_year'))
+                for v in lst if v.get('vod_name')]
+
+    def homeContent(self, filter=False):
+        return {'class': [{'type_id': k, 'type_name': v} for k, v in TYPES],
+                'list': self._items(self._applist(1, 20)[:20])}
+
+    def homeVideoContent(self):
+        return {'list': self._items(self._applist(1, 20)[:20])}
+
+    def _catfetch(self, url):
+        try:
+            r = requests.get(url, headers={'user-agent': UA}, timeout=(5, 8))
+            if r.status_code != 200:
+                return [], 9999
+            j = r.json()
+            L = j.get('list') or []
+            return [self._item(v.get('vod_name'), v.get('vod_pic'), v.get('vod_remarks'), v.get('vod_year'))
+                    for v in L if v.get('vod_name')], int(j.get('pagecount') or 9999)
+        except Exception:
+            return [], 9999
+
+    def _catlist(self, url):
+        key = 'c:' + url
+        if key in self._c:
+            return self._c[key]
+        ex = ThreadPoolExecutor(max_workers=1)
+        fu = ex.submit(self._catfetch, url)
+        try:
+            out, pc = fu.result(timeout=12)
+        except Exception:
+            out, pc = [], 9999
+        ex.shutdown(wait=False)
+        if out:
+            self._c[key] = (out, pc)
+        return out, pc
+
+    def categoryContent(self, tid, pg=1, filter=False, extend=''):
+        pn = max(int(str(pg) or 1), 1)
+        t = CAT_T.get(str(tid))
+        if not t:
+            return {'list': [], 'page': pn, 'pagecount': 9999, 'limit': 20, 'total': 0}
+        out, pc = self._catlist(S_CAT % (t, pn))
+        if not out:
+            alt = '36' if t == '46' else t
+            o2, pc2 = self._catlist(S_CAT2 % (alt, pn))
+            if o2:
+                out, pc = o2, pc2
+        return {'list': out, 'page': pn, 'pagecount': pc, 'limit': 20, 'total': 999999}
+
+    def searchContent(self, key, quick=False, pg='1'):
+        out = []
+        j = self._app('/index.php/ajax/suggest?mid=1&wd=' + quote(key or ''))
+        for v in ((j or {}).get('list') or []):
+            out.append(self._item(v.get('name'), v.get('pic')))
+        if not out:
+            for v in self._applist(1, 50):
+                if key and key in (v.get('vod_name') or ''):
+                    out.append(self._item(v.get('vod_name'), v.get('vod_pic'), v.get('vod_remarks'), v.get('vod_year')))
+        return {'list': out}
+
+    def _pic(self, name):
+        r = self._rq(S_LZ + quote(name), None, TO)
+        if r is None or r.status_code != 200:
+            return ''
+        try:
+            for v in (r.json().get('list') or []):
+                if self._match(name, v.get('vod_name')) and v.get('vod_pic'):
+                    return v.get('vod_pic')
+        except Exception:
+            pass
+        return ''
+
+    def _pick(self, groups):
+        for g in groups:
+            if 'm3u8' in g and '/share/' not in g:
+                return g
+        for g in groups:
+            if 'm3u8' in g:
+                return g
+        for g in groups:
+            if '/share/' not in g:
+                return g
+        return groups[0] if groups else ''
+
+    def _norm(self, s):
+        return re.sub(r'[^\u4e00-\u9fa5A-Za-z0-9]', '', s or '')
+
+    def _match(self, want, got):
+        a, b = self._norm(want), self._norm(got)
+        return bool(a and b and (a == b or a in b or b in a))
+
+    def _ep_from_json(self, tag, host_url, want=''):
+        r = self._rq(host_url, None, TO)
+        eps = []
+        if r is None or r.status_code != 200:
+            return eps
+        try:
+            L = (r.json().get('list') or [])
+        except Exception:
+            return eps
+        for v in L:
+            if want and not self._match(want, v.get('vod_name')):
+                continue
+            pu = v.get('vod_play_url') or ''
+            if not pu:
+                continue
+            pick = self._pick([g for g in pu.split('$$$') if '$' in g])
+            if not pick:
+                continue
+            for seg in pick.split('#'):
+                if '$' not in seg:
+                    continue
+                nm, u = seg.split('$', 1)
+                u = u.strip()
+                if u.startswith('http') or u.startswith('//'):
+                    eps.append((re.sub(r'[#$|]', '', nm).strip() or ('第%d集' % (len(eps) + 1)), '%s|%s' % (tag, u)))
+            if eps:
+                break
+        return eps
+
+    def _ep_yz(self, tag, name):
+        r = self._rq(S_YZ + quote(name), None, TO)
+        if r is None or r.status_code != 200:
+            return []
+        ids = []
+        for blk in re.findall(r'<video>(.*?)</video>', r.text, re.S):
+            mm = re.search(r'<name>(.*?)</name>', blk, re.S)
+            nmv = re.sub(r'<!\[CDATA\[|\]\]>', '', mm.group(1)).strip() if mm else ''
+            mi = re.search(r'<id>(\d+)</id>', blk)
+            if mi and (not name or self._match(name, nmv)):
+                ids.append(mi.group(1))
+        eps = []
+        for vid in ids[:2]:
+            r2 = self._rq(S_YZI + vid, None, TO)
+            if r2 is None or r2.status_code != 200:
+                continue
+            grp = [m.group(1) for m in re.finditer(r'<dd flag="[^"]*">(.*?)</dd>', r2.text, re.S)]
+            if not grp:
+                mu = re.search(r'<play_url>(.*?)</play_url>', r2.text, re.S)
+                grp = [mu.group(1)] if mu else []
+            pick = self._pick([re.sub(r'<!\[CDATA\[|\]\]>', '', g) for g in grp])
+            for seg in pick.split('#'):
+                if '$' not in seg:
+                    continue
+                nm, u = seg.split('$', 1)
+                u = re.sub(r'<!\[CDATA\[|\]\]>', '', u).strip()
+                if u.startswith('http') or u.startswith('//'):
+                    eps.append((re.sub(r'[#$|]', '', nm).strip() or ('第%d集' % (len(eps) + 1)), '%s|%s' % (tag, u)))
+            if eps:
+                break
+        return eps
+
+    def _ep_4kvm(self, name):
+        r = self._rq(S_K4 + '/search?q=' + quote(name), None, TO)
+        if r is None or r.status_code != 200:
+            return []
+        hit = ''
+        for m in re.finditer(r'href="(/play/[a-z0-9]+)"[^>]*>(.{0,200}?)</a>', r.text, re.S):
+            if name and name in re.sub(r'<[^>]+>', '', m.group(2)):
+                hit = m.group(1)
+                break
+        if not hit:
+            m = re.search(r'href="(/play/[a-z0-9]+)"', r.text)
+            hit = m.group(1) if m else ''
+        if not hit:
+            return []
+        r2 = self._rq(S_K4 + hit, None, TO)
+        if r2 is None or r2.status_code != 200:
+            return []
+        tm = re.search(r'<title>(.*?)</title>', r2.text, re.S)
+        if name and tm and not self._match(name, re.sub(r'<[^>]+>', '', tm.group(1))):
+            return []
+        pre = hit[:7]
+        seq = []
+        for s2 in re.findall(r'href="(/play/[a-z0-9]+)"', r2.text):
+            if s2.startswith(pre) and s2 not in seq:
+                seq.append(s2)
+        if len(seq) < 2:
+            return []
+        return [('第%02d集' % i, 'k4|' + S_K4 + s) for i, s in enumerate(seq, 1)]
+
+    def _line_eps(self, nm, tag, src, name):
+        try:
+            if tag == 'k4':
+                return self._ep_4kvm(name)
+            if tag == 'yz':
+                return self._ep_yz(tag, name)
+            url = src + quote(name)
+            return self._ep_from_json(tag, url, name)
+        except Exception:
+            return []
+
+    def detailContent(self, ids, quick='1'):
+        vid = str(ids[0] if isinstance(ids, list) else ids or '')
+        name = self._unid(vid)
+        if not name:
+            return {'list': [{'vod_id': vid, 'vod_name': ''}]}
+        key = 'd:' + name
+        if key in self._c:
+            return self._c[key]
+        ex = ThreadPoolExecutor(max_workers=8)
+        fus = [ex.submit(self._line_eps, nm, tag, src, name) for nm, tag, src in LINES]
+        end = time.time() + 12
+        got, miss = {}, []
+        for i, fu in enumerate(fus):
+            try:
+                eps = fu.result(timeout=max(0.5, end - time.time()))
+            except Exception:
+                eps = []
+            if eps:
+                got[i] = eps
+            else:
+                miss.append(i)
+        for i in miss:
+            try:
+                eps = fus[i].result(timeout=4)
+            except Exception:
+                eps = []
+            if eps:
+                got[i] = eps
+        lines = [(LINES[i][0], got[i]) for i in range(len(LINES)) if i in got]
+        ex.shutdown(wait=False)
+        pic = ''
+        j = self._app('/index.php/ajax/suggest?mid=1&wd=' + quote(name))
+        for v in ((j or {}).get('list') or []):
+            if (v.get('name') or '').strip() == name:
+                pic = v.get('pic') or ''
+                break
+        if not pic:
+            pic = self._pic(name)
+        d = {'vod_id': vid, 'vod_name': name, 'vod_pic': pic, 'vod_content': name, 'vod_remarks': ''}
+        if lines:
+            d['vod_play_from'] = '$$$'.join(x[0] for x in lines)
+            d['vod_play_url'] = '$$$'.join('#'.join('%s$%s' % (n, u) for n, u in x[1]) for x in lines)
+        r = {'list': [d]}
+        self._c[key] = r
+        return r
+
+    def _via_parser(self, url):
+        r = self._rq(PARSER + '/ff.php?url=' + quote(url, safe=''),
+                     {'user-agent': 'okhttp/3.12.0', 'accept-encoding': 'gzip'}, 12)
+        if r is None:
+            return ''
+        try:
+            j = r.json()
+            if str(j.get('code')) == '200' and j.get('url'):
+                return j.get('url')
+        except Exception:
+            pass
+        return ''
+
+    def playerContent(self, flag, id, vipFlags=None):
+        raw = str(id or '')
+        tag, _, payload = raw.partition('|')
+        real = payload.strip()
+        pre = TAG_PARSER.get(tag)
+        if pre and real.startswith('http'):
+            r = self._rq(pre + quote(real, safe=''), {'user-agent': 'okhttp/3.12.0', 'accept-encoding': 'gzip'}, 12)
+            if r is not None:
+                try:
+                    j = r.json()
+                    if str(j.get('code')) == '200' and j.get('url'):
+                        real = j.get('url')
+                except Exception:
+                    m = re.search(r'https?://[^\s"\'<>\\]+\.(?:m3u8|mp4)[^\s"\'<>\\]*', r.text or '')
+                    if m:
+                        real = m.group(0)
+        if real.startswith('//'):
+            real = 'https:' + real
+        if real.startswith('http') and '49.233.180.127' not in real:
+            r = self._rq(real, {'user-agent': UA}, 6)
+            if r is None or r.status_code != 200 or len(r.content) < 16:
+                alt = self._via_parser(real)
+                if alt:
+                    real = alt
+        return {'parse': 0, 'playUrl': '', 'url': real, 'header': {'User-Agent': UA}}
+
+    def isVideoFormat(self, url):
+        return bool(url) and bool(re.search(r'\.(?:%s)(?:\?|$)' % (VIDEO_EXTS or 'm3u8'), url, re.I))
+
+    def manualVideoCheck(self):
+        return False
+
+    def getDependence(self):
+        return ''
+
+    def destroy(self):
+        try:
+            self._c.clear()
+        except Exception:
+            pass
+
+    def progressVideo(self, speed, time, end):
+        return False
+
+    def setVideoFlags(self, siteKey, flags):
+        return None
+
+    def localProxy(self, param):
+        return None
