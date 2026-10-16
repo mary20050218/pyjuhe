@@ -51,6 +51,11 @@ https://cdn.jsdelivr.net/gh/zxsla/pyjuhe@main/tvbox.json
 
 ---
 
+
+## ⭐ Star 趋势
+
+[![Star History Chart](https://api.star-history.com/svg?repos=zxsla/pyjuhe&type=Date)](https://star-history.com/#zxsla/pyjuhe&Date)
+
 ## ⚠️ Disclaimer
 
 This repository is a technical aggregation only. All content comes from publicly available sites on the internet. Contact us for takedown if anything infringes your rights.
