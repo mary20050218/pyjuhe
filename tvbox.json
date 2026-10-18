@@ -804,11 +804,16 @@
   ],
   "lives": [
     {
-      "name": "📺央视卫视",
+      "name": "📺央视卫视(IPv6)",
       "type": 0,
       "url": "https://live.fanmingming.cn/tv/m3u/ipv6.m3u",
       "epg": "https://live.fanmingming.cn/e.xml",
       "logo": "https://live.fanmingming.cn/tv/{name}.png"
+    },
+    {
+      "name": "📺央视(IPv4)",
+      "type": 0,
+      "url": "https://iptv-org.github.io/iptv/countries/cn.m3u"
     }
   ]
 }
