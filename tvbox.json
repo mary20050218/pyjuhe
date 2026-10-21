@@ -769,6 +769,33 @@
       "name": "📺直播｜咖啡直播",
       "type": 3,
       "api": "https://gcore.jsdelivr.net/gh/mary20050218/pyjuhe@main/py_kafeizhibo.py"
+    },
+    {
+      "key": "drpy_zip0",
+      "name": "🎬影视｜ZIP0",
+      "type": 3,
+      "api": "https://gcore.jsdelivr.net/gh/mary20050218/pyjuhe@main/drpy2.min.js",
+      "ext": "https://gcore.jsdelivr.net/gh/mary20050218/pyjuhe@main/zip0.js",
+      "searchable": 1,
+      "quickSearch": 1
+    },
+    {
+      "key": "drpy_keke",
+      "name": "🎬影视｜可可影视",
+      "type": 3,
+      "api": "https://gcore.jsdelivr.net/gh/mary20050218/pyjuhe@main/drpy2.min.js",
+      "ext": "https://gcore.jsdelivr.net/gh/mary20050218/pyjuhe@main/keke.js",
+      "searchable": 1,
+      "quickSearch": 1
+    },
+    {
+      "key": "drpy_chishilu",
+      "name": "🎬影视｜驰时录",
+      "type": 3,
+      "api": "https://gcore.jsdelivr.net/gh/mary20050218/pyjuhe@main/drpy2.min.js",
+      "ext": "https://gcore.jsdelivr.net/gh/mary20050218/pyjuhe@main/chishilu.js",
+      "searchable": 1,
+      "quickSearch": 1
     }
   ],
   "parses": [
