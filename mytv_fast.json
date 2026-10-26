@@ -891,7 +891,9 @@
    "playerType": 2,
    "timeout": 10,
    "ua": "okHttp/Mod-1.5.0.0"
-  }
+  },
+  {"name": "电视直播v2.3直连", "type": 0, "url": "https://gcore.jsdelivr.net/gh/mary20050218/pyjuhe@931bf80b5cc7381a70124012e4b4c9f162f4fc3b/tvbox_live_v23_direct.txt", "playerType": 2},
+  {"name": "电视直播v2.3-HEAD200", "type": 0, "url": "https://gcore.jsdelivr.net/gh/mary20050218/pyjuhe@931bf80b5cc7381a70124012e4b4c9f162f4fc3b/tvbox_live_v23_direct_ok200.txt", "playerType": 2}
  ],
  "parses": [
   {
