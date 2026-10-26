@@ -840,7 +840,7 @@
   }
  ],
   "lives": [
-       {"name":"央视+卫视精简","type":0,"url":"https://gcore.jsdelivr.net/gh/mary20050218/pyjuhe@c45d7638514ba9f5d5d44b2e05f6c316bdd6bb70/tvbox_cctv_migu_weishi_best.txt","playerType":2},
+       {"name":"央视+卫视精简","type":0,"url":"https://gcore.jsdelivr.net/gh/mary20050218/pyjuhe@2f09f44b44db3193bf18ceac23aab31e0e841ed8/tvbox_cctv_migu_weishi_best.m3u","playerType":2},
      {"name": "卫视精简(IPv4)", "type": 0, "url": "https://gcore.jsdelivr.net/gh/mary20050218/pyjuhe@942196527ad6a5ae232c05f1db1f3469138eccef/tvbox_weishi_best.txt", "playerType": 2},
      {"name": "卫视多线路(IPv4)", "type": 0, "url": "https://gcore.jsdelivr.net/gh/mary20050218/pyjuhe@942196527ad6a5ae232c05f1db1f3469138eccef/tvbox_weishi_multi.txt", "playerType": 2},
      {"name": "卫视IPv6备用", "type": 0, "url": "https://gcore.jsdelivr.net/gh/mary20050218/pyjuhe@942196527ad6a5ae232c05f1db1f3469138eccef/tvbox_weishi_fanmingming_ipv6.txt", "playerType": 2},
