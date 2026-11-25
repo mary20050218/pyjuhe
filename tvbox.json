@@ -771,6 +771,12 @@
       "api": "https://gcore.jsdelivr.net/gh/mary20050218/pyjuhe@main/py_kafeizhibo.py"
     },
     {
+      "key": "py_jisu",
+      "name": "🎬影视｜球状闪电",
+      "type": 3,
+      "api": "https://gcore.jsdelivr.net/gh/mary20050218/pyjuhe@main/py_jisu.py"
+    },
+    {
       "key": "drpy_zip0",
       "name": "🎬影视｜ZIP0",
       "type": 3,
